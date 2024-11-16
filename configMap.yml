@@ -1,0 +1,12 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysgl-db-configmap
+  labels:
+    storage: mysql-db-configmap
+data:
+  DB_DRIVER_NAME: com.mysql.cj.jdbc.Driver
+  DB_SERVICE_NAME: weshopify
+  DB_SCHEMA_VALUE: weshopify
+  DB_PORT_VALUE: "3306"
